@@ -1,0 +1,43 @@
+body {
+	background: #FFF;
+	font-family:sans-serif;
+}
+#lazyjson {
+	padding: 0 20px;
+}
+ul#lazy_load {
+	list-style-type: none;
+}
+ul#lazy_load li {
+	float: left;
+	width: 23%;
+	padding: 7px;
+	margin: 4px;
+	height: 120px;
+	background: #EFEFEF;
+	display: inline-block;
+	border-radius: 5px;
+}
+ul#lazy_load li:nth-child(5) { clear: both;}
+
+ul#lazy_load .portfolio-item a {
+	font-size: 24px;
+	font-variant: small-caps;
+	font-family: cursive;
+	font-weight: 800;
+	/*width: 100%;*/
+}
+ul#lazy_load .portfolio-item p {
+	color: #AAA;
+	/*width: 100%;*/
+	margin-top: 7px;
+}
+.portfolio-item-tags span {
+	font-size: 12px;
+	border: 1px solid #BBB;
+	padding: 3px;
+}
+#searchString {
+	margin: 20px 30%;
+	width: 500px;
+}

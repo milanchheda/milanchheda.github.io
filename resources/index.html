@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="js/jquery.lazyjson.min.js"></script>
+	<script src="js/lazy.js"></script>
+    <title>Milan Chheda | Resources</title>  
+</head>
+<body>
+<div id="lazyjson">
+	<input type='text' id='searchString' />
+    <ul id="lazy_load" class="styled">
+		<li id="template-lazy_load" style="display:none;">
+        	<a href= {{data.url}}>{{data.title}}</a>
+        	<p>{{data.description}}</p>
+		</li>
+	</ul>
+</div>
+</body>
+</html>
