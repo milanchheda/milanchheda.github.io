@@ -269,7 +269,7 @@ a.code:hover {
   filter:alpha(opacity=1);
 }
 
-a.download-button {
+button.download-button {
   border: 1px solid black;
   border-radius: 3px;
   display: inline-block;
@@ -282,9 +282,10 @@ a.download-button {
   background: -moz-linear-gradient(top,  #37ADD4,  #1B657E); /* for firefox 3.6+ */
   height: auto;
   margin-left: 10px;
+  cursor: pointer;
 }
 
-a.download-button span {
+button.download-button span {
   background-position: 10px 5px;
   width: auto;
   height: auto;
