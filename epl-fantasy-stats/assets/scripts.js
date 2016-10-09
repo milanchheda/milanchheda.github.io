@@ -41,7 +41,7 @@ $(document).ready(function(){
     getValuesAndShowData();
   });
 
-	$.getJSON('https://fantasy.premierleague.com/drf/elements', function(json) {
+	$.getJSON('data.json', function(json) {
     var rowHtml = "<table class='eplFantasyTable sortable' id='eplTable'><thead><tr>" +
       "<th title='Player name'>Name</th>" +
       "<th title='players club name'>Team</th>" +
