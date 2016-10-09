@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Github Card Generator</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/generateCard.js"></script>
+</head>
+<body>
+
+
+
+<!-- <div class="github-card" data-github="bmhaskar" data-width="400" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+ -->
+
+
+	<form class="cardGenerator">
+		<div class="inputContainer">
+			<input type='text' id='username' class='username' placeholder="Github username" />
+		</div>
+		<div class="inputContainer">
+			<input type='text' id='stackOverflowId' class='username' placeholder="Stack overflow ID" />
+		</div>
+		<div class="buttonContainer">
+			<button id="generateCard">Generate card</button>
+		</div>
+	</form>
+	<div class="showCard"></div>
+	<div class="stackCard"></div>
+</body>
+</html>

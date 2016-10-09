@@ -1,0 +1,190 @@
+body {
+    background-color: #f9f9f9;
+    background-image: url(../images/texture.png);
+    height: 100%;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8em;
+}
+.cardGenerator {
+	background: #FFF;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+	padding: 10px;
+	width: 200px;
+}
+.inputContainer input#username, .inputContainer input#stackOverflowId {
+	padding: 4px;
+	margin-bottom: 5px;
+}
+.inputContainer input.error {
+	border: 1px solid #d00;
+}
+
+
+
+.github-card {
+    border-radius: 5px;
+    padding: 8px 8px 0;
+    color: #555;
+    position: relative;
+}
+
+
+.user {
+  font-family: "Helvetica", Arial, sans-serif;
+  display: inline-block;
+  width: 306px;
+  height: 290px;
+  overflow: hidden;
+  border: 1px solid #D5D5D5;
+  border-radius: 6px;
+  position: relative;
+  background-color: #2E353C;
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+  transition: background 1000ms ease-out;
+}
+
+.user dl,
+.user dd {
+  margin: 0;
+}
+
+.user dt {
+  display: none;
+}
+
+.user-data {
+  background: #fff; 
+  /*background: #FFF url('../images/github.png') no-repeat 5px 5px;*/
+  background-size: 25px;
+  height: 72px;
+}
+
+dd.user-avatar {
+	display: inline-block;
+	margin: 5px 0 10px;
+	position: absolute;
+	top: 3px;
+	left: 7px;
+}
+
+.user-avatar img {
+  	border-radius: 4%;
+    height: 64px;
+    width: 64px;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+dd.user-name,
+dd.user-account {
+  margin: 5px 0 0 50px;
+}
+
+.user-name {
+  font-size: 24px;
+  color: #333;
+  padding-top: 5px;
+}
+
+.user-account {
+  font-size: 16px;
+  color: #999;
+  margin: 0;
+}
+.additional-data {
+	color: #FFF;
+	margin-top: 13px !important;
+}
+.user-stats {
+  border-top: 1px groove #999;
+  border-bottom: 1px groove #999;
+  position: relative;
+  top: 16px;
+}
+
+.user-stats dd {
+  padding: 10px 20px;
+}
+
+.user-repos,
+.user-following,
+.user-followers {
+  display: inline-block;
+  font-size: 22px;
+  color: #999;
+}
+
+.user-repos:after,
+.user-following:after,
+.user-followers:after {
+  content: attr(data-stats);
+  text-transform: uppercase;
+  display: block;
+  font-size: 11px;
+  color: #666;
+  font-weight: normal;
+  line-height: 1.7em;
+}
+.user-repos:hover,
+.user-following:hover,
+.user-followers:hover {
+	background: #FFF;
+	color: #000;
+	/*transition: background 500ms ease-out;*/
+}
+a.top-section {
+	text-decoration: none;
+}
+.user-blog a {
+	text-decoration: none;
+	color: #EEE;
+}
+.footer{
+    font-size: 12px;
+    font-weight: 700;
+    padding: 21px 0 10px;
+    color: #646464;
+}
+.footer a {
+	color: #646464;
+	text-decoration: none;
+	outline: none;
+}
+.footer a:hover {
+	color: #FFF;
+}
+.footer a.hireLink {
+	float: left;
+	width: 80%;
+    text-align: left;
+    margin-left: 7px;
+}
+
+
+
+
+
+
+
+
+/*
+
+.stackCard .github-card {
+  background: #FFF !important;
+}
+.bronze {
+  background: #ffcd03;
+  color: #000;
+}
+.silver {
+  background: #c5c5c5;
+  color: #000;
+}
+.gold {
+  background: #c96;
+  color: #000;
+  font-weight: bold;
+}*/
