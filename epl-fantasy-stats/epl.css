@@ -69,3 +69,7 @@ div.filters .filtersContainer a.active {
     font-size: 24px;
     /*display: none;*/
 }
+#jetsSearch {
+    padding: 4px;
+    margin-top: -5px;
+}

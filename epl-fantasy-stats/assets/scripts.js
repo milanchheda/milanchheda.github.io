@@ -62,7 +62,7 @@ $(document).ready(function(){
       "<th title='Minutes played'>Mins</th>" +
       "<th title='Players selected by how many users'>Selected by %</th>" +
       "<th title='News about this player'>News</th>" +
-    '</tr></thead><tbody>';
+    '</tr></thead><tbody id="jetsContent">';
 
 		$.each(json, function(k, v) {
       var cardPlayers = '';
@@ -99,6 +99,10 @@ $(document).ready(function(){
     rowHtml += "</tbody></table>";
     $(".container").html(rowHtml);
     sorttable.makeSortable(document.getElementById('eplTable'));
+    var jets = new Jets({
+      searchTag: '#jetsSearch',
+      contentTag: '#jetsContent'
+    });
 	});
 });
 
