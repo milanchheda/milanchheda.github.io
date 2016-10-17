@@ -1,6 +1,12 @@
 var teamsArray = [];
 var playersArray = [];
 
+$(window).on('scroll', function() {
+  if($(this).scrollTop() > 50)
+    $("h1,.filters").addClass('scrolled');
+  else
+    $("h1,.filters").removeClass('scrolled');
+});
 
 $(document).ready(function(){
   $("#playersWithCards,#dreamTeam,#injuredPlayers,#unavailablePlayers").click(function(){
