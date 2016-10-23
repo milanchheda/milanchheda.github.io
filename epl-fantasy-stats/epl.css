@@ -3,12 +3,28 @@
   padding: 0;
 }
 body {
-    background: #FFC;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 12px;
 }
-h1 {
+body.yellow {
+    background: #FFC;
+}
+body.blue {
+    background: #dbe8fc;
+}
+body.red {
+    background: #edddda;
+}
+.yellow h1 {
     background-color: #FFC;
+}
+.blue h1 {
+    background-color: #dbe8fc;
+}
+.red h1 {
+    background-color: #edddda;
+}
+h1 {
     position: fixed;
     top: 4px;
     width: 100%;
@@ -16,8 +32,23 @@ h1 {
     padding: 5px 5px 7px 10px;
     margin: 0;
 }
-h1.scrolled, div.scrolled {
+.yellow h1.scrolled, .yellow div.scrolled {
     background: #FFA !important;
+}
+.blue h1.scrolled, .blue div.scrolled {
+    background: #2d5493 !important;
+    color: #FFF;
+}
+.red h1.scrolled, .red div.scrolled {
+    background: #7c3627;
+    color: #FFF;
+}
+.white h1.scrolled, .white div.scrolled {
+    background: #EEE;
+    color: #000;
+}
+h1.scrolled, div.scrolled {
+    /*background: #FFA !important;*/
     position: fixed;
     top: 0px;
 }
@@ -33,22 +64,40 @@ table.eplFantasyTable {
     margin-left: 10px;
     float: left;
 }
-table.eplFantasyTable thead tr th {
+.yellow table.eplFantasyTable thead tr th {
     background: #BAF;
+}
+.blue table.eplFantasyTable thead tr th {
+    background: #BAF;
+}
+.red table.eplFantasyTable thead tr th {
+    background: #BAF;
+}
+.white table.eplFantasyTable thead tr th {
+    background: #BAF;
+}
+table.eplFantasyTable thead tr th {
+    /*background: #BAF;*/
     color: #444;
     cursor: help;
 }
 table.eplFantasyTable tbody tr td, table.eplFantasyTable thead tr th {
     border: 1px solid #777;
     padding: 4px;
+    font-weight: 700;
 }
+.yellow div.filters {
+    background-color: #FFC; 
+}
+/*.blue div.filters {
+    background-color: #FFC; 
+}*/
 div.filters {
     float: left;
     width: 100%;
     border-bottom: 3px solid #A00;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #FFC; 
     position: fixed;
     top: 39px;
     width: 100%;
@@ -61,6 +110,23 @@ div.filters .filtersContainer {
     float: left;
     margin-right: 10px;
 }
+.yellow div.filters .filtersContainer a {
+    color:#333;
+    background-color: #ffffff;
+}
+.blue div.filters .filtersContainer a {
+    color:#333;
+    background-color: #FFC;
+}
+.red div.filters .filtersContainer a {
+    color:#333;
+    background-color: #FFC;
+}
+.white div.filters .filtersContainer a {
+    color:#333;
+    background-color: #FFC;
+    border: 1px solid #AAA;
+}
 div.filters .filtersContainer a {
     text-decoration: none;
     /*padding: 4px;
@@ -69,8 +135,6 @@ div.filters .filtersContainer a {
     -webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
     -moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
     box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
-    color:#333;
-    background-color: #ffffff;
     border-radius:5px;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
@@ -106,4 +170,39 @@ div.container {
 #jetsSearch {
     padding: 4px;
     margin-top: -5px;
+}
+.header {
+    position: fixed;
+    top: 10px;
+    right: 4px;
+    z-index: 99999;
+    margin: 0;
+}
+#switcher {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#switcher li {
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin: 0 15px 15px 0;
+  border-radius: 30px;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+
+#white {
+  background: white;
+}
+#red {
+  background: red;
+}
+#blue {
+  background: blue;
+}
+#yellow {
+  background: yellow;
 }

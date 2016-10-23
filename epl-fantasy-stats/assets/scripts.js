@@ -9,6 +9,9 @@ $(window).on('scroll', function() {
 });
 
 $(document).ready(function(){
+  $("#switcher li").click(function(){
+    $("body").removeAttr('class').addClass($(this).attr('id'));
+  });
   $("#playersWithCards,#dreamTeam,#injuredPlayers,#unavailablePlayers").click(function(){
     
     if($(this).hasClass('active')) {
